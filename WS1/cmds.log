@@ -1,0 +1,90 @@
+    1  echo  $SHELL
+    2  chsh -s $(which zsh)
+    3  sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+    4  cd
+    5  ls
+    6  cd
+    7  cd ..
+    8  ls
+    9  cd ..
+   10  cd mnt
+   11  cd c
+   12  ls
+   13  nano ~/.zshrc
+   14  cd
+   15  cd ..
+   16  cd mnt
+   17  cd desktop
+   18  cd c
+   19  ls
+   20  sudo apt install gcc
+   21  sudo apt install make
+   22  pwd
+   23  cd
+   24  cd maske
+   25  ls
+   26  cd
+   27  cd ..
+   28  ls
+   29  cd rmaskey
+   30  ls
+   31  cd ..
+   32  ls
+   33  cd mnt
+   34  ls
+   35  cd wsl
+   36  ls
+   37  cd ..
+   38  cd c
+   39  cd Users
+   40  cd maske
+   41  cd Desktop
+   42  ls -latr
+   43  ls -latr ; mkdir cs149 ; cd cs149
+   44  ls
+   45  cd ..
+   46  ls
+   47  cd cs149
+   48  git init
+   49  git remote add origin https://reshajm@bitbucket.com/x/cs149.git
+   50  git config --global user.email reshaj.maskey@sjsu.edu
+   51  git config --global user.name Reshaj
+   52  mkdir WS1
+   53  cd WS1
+   54  git add .
+   55  wget -O out.pdf https://tinyurl.com/yy94jltt
+   56  ls -latr
+   57  history > cmds.log
+   58  git add cmds.log *.c
+   59  git add cmds.log
+   60  git commit -m "First commit" -a
+   61  git branch
+   62  git push -u origin master
+   63  cd Desktop
+   64  ls
+   65  cd cs149
+   66  git push -u origin master
+   67  git branch
+   68  git add cmds.log
+   69  ls
+   70  cd ws1
+   71  ls
+   72  git add cmds.log
+   73  git commit -m "First commit" -a
+   74  git add out.pdf
+   75  git commit -m "First commit" -a
+   76  git push -u origin master
+   77  git remote set-url origin https://bitbucket.org/reshajm/cs149.git/
+   78  git push -u origin master
+   79  cd Desktop
+   80  mkdir cs149 ; cd cs149
+   81  git clone https://reshajm@bitbucket.org/cs149class/cs149.git
+   82  git branch
+   83  ls
+   84  cd cs149
+   85  mkdir WS!
+   86  mkdir WS1
+   87  cd WS1
+   88  wget -O out.pdf https://tinyurl.com/yy94jltt
+   89  ls -latr
+   90  history cmds.log
