@@ -88,3 +88,65 @@
    88  wget -O out.pdf https://tinyurl.com/yy94jltt
    89  ls -latr
    90  history cmds.log
+   91  history > cmds.log
+   92  git add cmds.log
+   93  git commit -m "First commit" -a
+   94  git push -u origin master
+   95  git add cmds.log *.c
+   96  git add .
+   97  git add cmds.log
+   98  git add cmds.log -f
+   99  git commit -m "First commit" -a
+  100  git push -u origin master
+  101  sudo snap install clion --classic
+  102  clion.sh
+  103  sudo snap list
+  104  clion.sh
+  105  clion
+  106  clion.sh
+  107  sudo clion.sj
+  108  sudo clion.sh
+  109  cd Desktop
+  110  sudo snap install clion --classic
+  111  snap help refresh
+  112  sudo snap list
+  113  sudo snap clion.sj
+  114  sudo snap clion.sh
+  115  clion.sh
+  116  cd cd149
+  117  ls
+  118  cd cs149
+  119  ls
+  120  cd cs149
+  121  cd WS1
+  122  gcc -o helloWorld helloWorld.c
+  123  ./helloWorld
+  124  gcc -o noParkingSign noParkingSign.c
+  125  ./noParkingSign
+  126  gcc -o noParkingSign noParkingSign.c
+  127  ./noParkingSign
+  128  gcc -o rightArrow rightArrow.c
+  129  ./rightArrow
+  130  gcc -o rightArrow rightArrow.c
+  131  ./rightArrow
+  132  gcc -o rightArrow rightArrow.c
+  133  ./rightArrow
+  134  gcc -o rightArrow rightArrow.c
+  135  ./rightArrow
+  136  gcc -o rightArrow rightArrow.c
+  137  gcc -o warmUpHelloWorld warmUpHelloWorld.c
+  138  ./warmUpHelloWorld
+  139  gcc -o warmUpHelloWorld warmUpHelloWorld.c
+  140  ./warmUpHelloWorld
+  141  gcc -o basicOptWVar basicOptWVar.c
+  142  ./basicOptWVar
+  143  gcc -o basicOptWVar basicOptWVar.c
+  144  ./basicOptWVar
+  145  gcc -o basicOptWVar basicOptWVar.c
+  146  ./basicOptWVar
+  147  gcc -o basicOptWVar basicOptWVar.c
+  148  ./basicOptWVar
+  149  gcc -o asciiArt asciiArt.c
+  150  ./asciiArt
+  151  gcc -o asciiArt asciiArt.c
+  152  ./asciiArt
