@@ -1,6 +1,6 @@
 /**
  * file: smallestNum.c
- * author: Reshaj Maskey
+ * author: Reshaj Maskey, Shannon Luu
  * description: program that reads three integer inputs and outputs the smallest of the three
  */
 

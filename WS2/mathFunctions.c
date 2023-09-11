@@ -1,6 +1,6 @@
 /**
  * file: mathFunctions.c
- * author: Reshaj Maskey
+ * author: Reshaj Maskey, Shannon Luu
  * description: a program that takes a float input x, y, and z and does multiple math operations with them:
  * 				- x^z
  * 				- x^(y^2)

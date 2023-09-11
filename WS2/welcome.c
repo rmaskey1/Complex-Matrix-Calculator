@@ -1,6 +1,6 @@
 /**
  * file: welcome.c
- * author: Reshaj Maskey
+ * author: Reshaj Maskey, Shannon Luu
  * description: program that reads the input (user's first name) and outputs a welcoming message with the inputted name
  */
 

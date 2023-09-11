@@ -1,6 +1,6 @@
 /**
  * file: houseSummary.c
- * author: Reshaj Maskey
+ * author: Reshaj Maskey, Shannon Luu
  * description: program that reads the current price and last month's price of a house and give summary about price change and monthly mortgage
  */
 

@@ -1,6 +1,6 @@
 /**
  * file: divInpInt.c
- * author: Reshaj Maskey
+ * author: Reshaj Maskey, Shannon Luu
  * description: program that reads integers userNum and divNum as parameters and outputs userNum/divNum three times
  */
 
