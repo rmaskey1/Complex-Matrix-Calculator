@@ -120,6 +120,10 @@ The purpose of this repository is to execute multiple matrix multiplication oper
             ]<br />
             Finished child 10785 pid of parent 10766<br />
             Exited with exitcode = 0<br />
+    * If the program is killed at any point, an .err file saying "Killed with signal 15" will be printed to the .err file for the killed process.
+    * It will look similar to this:<br />
+        $ cat 10785.err
+        Killed with signal 15
 
 ### Last Modified ###
 
