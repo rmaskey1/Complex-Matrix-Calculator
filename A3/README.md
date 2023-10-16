@@ -1,4 +1,4 @@
-# Matrix Multiplication #
+# Multiple Parallel Matrix Multiplications #
 
 ### Purpose ###
 
@@ -122,12 +122,13 @@ The purpose of this repository is to execute multiple matrix multiplication oper
             Exited with exitcode = 0<br />
     * If the program is killed at any point, an .err file saying "Killed with signal 15" will be printed to the .err file for the killed process.
     * It will look similar to this:<br />
-        $ cat 10785.err
-        Killed with signal 15
+        **$ cat 10785.err<br />**
+        **Killed with signal 15**
+    * The average runtime of three trials for this program was **0.00 seconds**
 
 ### Last Modified ###
 
-* Last modified: 9/11/2023
+* Last modified: 10/15/2023
 
 ### Contributors + Contact ###
 
