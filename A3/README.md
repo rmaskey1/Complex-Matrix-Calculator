@@ -10,7 +10,7 @@ The purpose of this repository is to execute multiple matrix multiplication oper
 * To compile C file in terminal: **gcc -o matrixmult_multiw matrixmult_multiw.c -Wall -Werror**
     * "-Wall" enables all warning messages and "-Werror" makes all warnings into errors
 * To run the program with test cases in terminal: **./matrixmult_multiw test/A1.txt test/W1.txt test/W2.txt test/W3.txt**
-    * "1" in the text file names can vary by test file names
+    * "The numbers in the text file names can vary by test file names
 
 ### Expected Test Case Results ###
 
@@ -120,7 +120,7 @@ The purpose of this repository is to execute multiple matrix multiplication oper
             ]<br />
             Finished child 10785 pid of parent 10766<br />
             Exited with exitcode = 0<br />
-    * If the program is killed at any point, an .err file saying "Killed with signal 15" will be printed to the .err file for the killed process.
+    * If the program is killed at any point, an .err file saying "Killed with signal 15" will be printed to the .err file for the killed process
     * It will look similar to this:<br />
         **$ cat 10785.err<br />**
         **Killed with signal 15**
