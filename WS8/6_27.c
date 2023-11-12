@@ -2,8 +2,8 @@
  * Description: 6.27 LAB: Count characters - functions
  * Author names: Reshaj Maskey, Shannon Luu
  * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
- * Last modified date: 10/18/2023
- * Creation date: 10/18/2023
+ * Last modified date: 10/21/2023
+ * Creation date: 10/21/2023
  **/
 
 /*
@@ -54,7 +54,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Define your function here */
 int calcNumCharacters(char* userString, char userChar) {
    int count = 0;
    for(int i = 0; i < sizeof(userString); i++) {
