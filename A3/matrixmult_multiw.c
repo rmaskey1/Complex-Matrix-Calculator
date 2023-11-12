@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
 			childPID = getpid();
 			parentPID = getppid();
 
-			//Creats .out and .err file for each child PID
+			//Creates .out and .err file for each child PID
 			char outputFile[100];
 			snprintf(outputFile, sizeof(outputFile), "%d.out", getpid());
 			char errorFile[100];
