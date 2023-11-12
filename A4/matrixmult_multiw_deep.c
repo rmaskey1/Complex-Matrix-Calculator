@@ -1,9 +1,9 @@
 /**
- * File: matrixmult_multiw.c
+ * File: matrixmult_multiw_deep.c
  * Description: This module executes multiple matrix multiplications in parallel.
  * Author names: Reshaj Maskey, Shannon Luu
  * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
- * Last modified date: 11/12/2023
+ * Last modified date: 11/07/2023
  * Creation date: 10/27/2023
  */
 
