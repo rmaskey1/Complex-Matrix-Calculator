@@ -1,25 +1,25 @@
-# Multiple Parallel Matrix Multiplications #
+# Deep Learning Multiple Parallel Matrix Multiplications #
 
 ### Purpose ###
 
-The purpose of this repository is to execute multiple matrix multiplication operations in parallel. If the given files for matrices are 'A1.txt W1.txt W2.txt W3.txt', the operations that will occur simultaneously are A1\*W1, A1\*W2, A1\*W3.
+The purpose of this repository is to get the matrix sum of a series of executions of multiple matrix multiplication operations in parallel.
 
 ### How to Run Test Cases ###
 
 * Test cases are present in the "test" folder of this directory
-* To compile C file in terminal: **gcc -o matrixmult_multiw matrixmult_multiw.c -Wall -Werror**
+* To compile C file in terminal: **gcc -o matrixmult_multiw_deep matrixmult_multiw_deep.c -Wall -Werror**
     * "-Wall" enables all warning messages and "-Werror" makes all warnings into errors
-* To run the program with test cases in terminal: **./matrixmult_multiw test/A1.txt test/W1.txt test/W2.txt test/W3.txt**
-    * "The numbers in the text file names can vary by test file names
+* To run the program with test cases in terminal, the first line will be treated as a command line command and the following lines will be treated as standard inputs prompted by the program:
+    * **./matrixmult_multiw_deep test/A1.txt test/W1.txt test/W2.txt test/W3.txt<br />**
+      **test/W4.txt test/W5.txt test/W6.txt test/W7.txt<br />**
+      **test/W8.txt<br />**
+    * The numbers in the W.text file names can vary by valid test file names
 
 ### Expected Test Case Results ###
 
 * The following is the test case result of the test case provided above:
-    *   $ cat 10767.err<br />
-        $ cat 10767.out<br />
-            Starting command 1: child 10767 of parent 10766<br />
-            A1.txt = \[<br />
-            10      30      40      50      0       0       0       0<br />
+    *       RSum = \[<br />
+            71350   54770   54770   54770   54770   54770   54770   97080<br />
             0       0       0       0       0       0       0       0<br />
             0       0       0       0       0       0       0       0<br />
             0       0       0       0       0       0       0       0<br />
@@ -28,99 +28,16 @@ The purpose of this repository is to execute multiple matrix multiplication oper
             0       0       0       0       0       0       0       0<br />
             0       0       0       0       0       0       0       0<br />
             ]<br />
-            W1.txt = \[<br />
-            1       3       4       5       1       0       0       0<br />
-            2       4       5       0       0       0       0       0<br />
-            1       1       5       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            R = \[<br />
-            110     190     390     50      10      0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            Finished child 10767 pid of parent 10766<br />
-            Exited with exitcode = 0<br />
-        $ cat 10776.err<br />
-        $ cat 10776.out<br />
-            Starting command 2: child 10776 of parent 10766<br />
-            A1.txt = \[<br />
-            10      30      40      50      0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            W2.txt = \[<br />
-            10      3       4       5       1       0       0       0<br />
-            20      4       5       0       0       0       0       0<br />
-            10      1       5       0       0       0       0       0<br />
-            10      0       0       0       0       0       0       0<br />
-            20      0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            R = \[<br />
-            1600    190     390     50      10      0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            Finished child 10776 pid of parent 10766<br />
-            Exited with exitcode = 0<br />
-        $ cat 10785.err<br />
-        $ cat 10785.out<br />
-            Starting command 3: child 10785 of parent 10766<br />
-            A1.txt = \[<br />
-            10      30      40      50      0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            \]<br />
-            W3.txt = \[<br />
-            1       3       4       5       1       0       0       0<br />
-            2       4       5       2       2       0       0       0<br />
-            1       1       5       11      12      0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            ]<br />
-            R = \[<br />
-            110     190     390     550     550     0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            0       0       0       0       0       0       0       0<br />
-            ]<br />
-            Finished child 10785 pid of parent 10766<br />
-            Exited with exitcode = 0<br />
-    * If the program is killed at any point, an .err file saying "Killed with signal 15" will be printed to the .err file for the killed process
+            
+    * Each PID.out file will consist of a starting message, the file paths of the A/Rsum text file and W text file, and a finishing + exit message
+    * It will look similar to this:<br />
+        **$ cat 12702.out<br/ >**
+        **Starting command 3: child 12702 of parent 12683<br />**
+        **A_filepath\[/mnt/c/Users/maske/Desktop/cs149/cs149/A4/test/A1.txt\]<br />**
+        **W_filepath\[/mnt/c/Users/maske/Desktop/cs149/cs149/A4/test/W3.txt\]<br />**
+        **Finished child 12702 pid of parent 12683<br />**
+        **Exited with exitcode = 0**
+    * If the program is killed at any point, a PID.err file saying "Killed with signal 15" will be printed to the PID.err file for the killed process
     * It will look similar to this:<br />
         **$ cat 10785.err<br />**
         **Killed with signal 15**
@@ -128,7 +45,7 @@ The purpose of this repository is to execute multiple matrix multiplication oper
 
 ### Last Modified ###
 
-* Last modified: 10/15/2023
+* Last modified: 11/07/2023
 
 ### Contributors + Contact ###
 
