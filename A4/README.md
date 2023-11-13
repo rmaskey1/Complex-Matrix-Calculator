@@ -13,6 +13,7 @@ The purpose of this repository is to get the matrix sum of a series of execution
     * **./matrixmult_multiw_deep test/A1.txt test/W1.txt test/W2.txt test/W3.txt<br />**
       **test/W4.txt test/W5.txt test/W6.txt test/W7.txt<br />**
       **test/W8.txt<br />**
+    * IMPORTANT NOTE: For each line of input following the first line, add a space at the end for functionality reasons
     * The numbers in the W.text file names can vary by valid test file names
 
 ### Expected Test Case Results ###
