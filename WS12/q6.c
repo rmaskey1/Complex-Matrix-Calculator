@@ -1,12 +1,12 @@
 /**
- * Description: WS12: Q4
+ * Description: WS12: Q6
  * Author names: Shannon Luu, Reshaj Maskey
  * Author emails: shannon.luu@sjsu.edu, reshaj.maskey@sjsu.edu
  * Last modified date: 11/27/2023
  * Creation date: 11/27/2023
  **/
 
-/*
+/
  * Answer the questions in the header comments of the files. You can upload the output as .log files as well.
  * Create a program "q6.c" that allocates an array of integers (as above), frees them, and then tries to print the
  * value of one of the elements of the array. Does the program run? What happens when you use valgrind on it?
