@@ -1,5 +1,5 @@
 /**
- * Description: WS12: Q6 - This program allocates memory but forgets to free it before exiting.
+ * Description: WS12: Q4 - This program allocates memory but forgets to free it before exiting.
  * Author names: Reshaj Maskey, Shannon Luu
  * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
  * Last modified date: 11/27/2023
