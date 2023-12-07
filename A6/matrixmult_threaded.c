@@ -1,3 +1,12 @@
+/**
+ * File: matrixmult_multiwa.c
+ * Description: This module executes multiple matrix multiplications in parallel.
+ * Author names: Reshaj Maskey, Shannon Luu
+ * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
+ * Last modified date: 10/15/2023
+ * Creation date: 10/10/2023
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -18,7 +27,9 @@ typedef struct {
     int *resultRow;
 } ThreadData;
 
-lock_t lockRealloc;
+pthread_mutex_t lockRealloc;
+pthread_mutex_t lockModifyR;
+pthread_mutex_t lockFinalR;
 
 int make2DMatrix(char *filename, int arr[ROWS][COLS]) {
     FILE *fp = fopen(filename, "r");
@@ -83,12 +94,14 @@ void *matrixMultRow(void *arg) {
     int (*W)[COLS] = data->W;
     int *resultRow = data->resultRow;
 
+    pthread_mutex_lock(&lockModifyR);
     for (int j = 0; j < COLS; j++) {
         resultRow[j] = 0;
         for (int k = 0; k < COLS; k++) {
             resultRow[j] += A[row][k] * W[k][j];
         }
     }
+    pthread_mutex_unlock(&lockModifyR);
 
     pthread_exit(NULL);
 }
@@ -174,7 +187,9 @@ int main(int argc, char *argv[]) {
             return 1;
         }
 
+        pthread_mutex_lock(&lockRealloc);
         reallocateMatrix(&R, &result_size, 8);
+        pthread_mutex_unlock(&lockRealloc);
 
         //Pointer arithmetic to write into the last 8 rows
         if (matrixMult(A, W, R + result_size - 8)) {
@@ -183,6 +198,7 @@ int main(int argc, char *argv[]) {
     }
 
     //Prints R matrix
+    pthread_mutex_lock(&lockFinalR);
     printf("R = [\n");
     for (int i = 0; i < result_size; i++) {
         for (int j = 0; j < COLS; j++) {
@@ -191,6 +207,7 @@ int main(int argc, char *argv[]) {
     printf("\n");
     }
     printf("]\n");
+    pthread_mutex_unlock(&lockFinalR);
 
     //Free() all the pointers inside the double pointer, then free double pointer
     for(int i=0; i<result_size; i++){
