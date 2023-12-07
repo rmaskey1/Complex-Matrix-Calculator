@@ -4,8 +4,8 @@
  * to compute their dot product (used in matrixmult_multiw)
  * Author names: Reshaj Maskey, Shannon Luu
  * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
- * Last modified date: 10/29/2023
- * Creation date: 10/27/2023
+ * Last modified date: 12/06/2023
+ * Creation date: 11/27/2023
  **/
 #include <stdlib.h>
 #include <stdio.h>
@@ -20,7 +20,6 @@
 #define MAX_FILENAME_LENGTH 100
 
 
-//lock_t lockRealloc;
 
 typedef struct
 {
