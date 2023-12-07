@@ -1,10 +1,10 @@
 /**
- * File: matrixmult_multiwa.c
+ * File: matrixmult_threaded.c
  * Description: This module executes multiple matrix multiplications in parallel.
  * Author names: Reshaj Maskey, Shannon Luu
  * Author emails: reshaj.maskey@sjsu.edu, shannon.luu@sjsu.edu
- * Last modified date: 10/15/2023
- * Creation date: 10/10/2023
+ * Last modified date: 12/06/2023
+ * Creation date: 12/01/2023
  */
 
 #include <stdlib.h>
