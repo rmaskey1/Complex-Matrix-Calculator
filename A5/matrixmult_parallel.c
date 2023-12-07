@@ -19,6 +19,9 @@
 #define COLS 8
 #define MAX_FILENAME_LENGTH 100
 
+
+//lock_t lockRealloc;
+
 typedef struct
 {
 	int data[ROWS][COLS];
