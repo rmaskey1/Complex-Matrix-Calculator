@@ -8,8 +8,8 @@ The purpose of this repository is to get the matrix sum of a series of execution
 
 * Test cases are present in the "Test" folder of this directory
 * To compile C file in terminal:
-    **gcc -o matrixmult_multiwa matrixmult_multiwa.c -Wall -Werror**
-    **gcc -o matrixmult_threaded matrixmult_threaded.c -Wall -Werror**
+    **gcc -o matrixmult_multiwa matrixmult_multiwa.c -Wall -Werror**<br />
+    **gcc -o matrixmult_threaded matrixmult_threaded.c -Wall -Werror -pthread**<br />
     * "-Wall" enables all warning messages and "-Werror" makes all warnings into errors
 * To run the program with test cases in terminal, use "< cmds.txt" to feed the program inputs:
     * **./matrixmult_multiwa Test/A1.txt Test/W1.txt Test/W2.txt Test/W3.txt < cmds.txt<br />**
