@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
 	int childPID;
 	int parentPID;
 	
-	char line[100];
+	//char line[100];
 	
 	pid_t children[argc-2];
 	int pipefds[argc-2][2];
